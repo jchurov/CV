@@ -1,0 +1,428 @@
+\documentclass[%singlesided,
+               doublesided,
+               paper=a4,
+               fontsize=10pt
+              ]{my-resume}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% set geometry
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\setlength\highlightwidth{8cm}
+\setlength\headerheight{4cm}            % note that margintop gets added to this value, i.e. the header bar is 5cm
+\setlength\marginleft{1cm}
+\setlength\marginright{\marginleft}      % needs to be 1.5 times to be actually equal. why?
+\setlength\margintop{1cm}
+\setlength\marginbottom{1cm}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% FONTS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\RequirePackage{fontspec}
+\setmainfont{Carlito}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% COLORS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\colorlet{highlightbarcolor}{lightgray}
+\colorlet{headerbarcolor}{darkgray}
+
+\colorlet{headerfontcolor}{white}
+\colorlet{accent}{awesome-red}
+\colorlet{heading}{black}
+\colorlet{emphasis}{black}
+\colorlet{body}{black}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% set document
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+\name{Ing. Jose Luis Churo Vicente}
+\tagline{Profesional con experiencia en el desarrollo de aplicaciones móviles, microservicios en la nube y aplicaciones web. Actualmente, me enfoco en crear soluciones escalables y eficientes. Mi trayectoria incluye una etapa en Big Data, que complementa mi capacidad para afrontar retos tecnológicos con una visión integral.}
+\photo[round]{picture.png}{\dimexpr \headerheight-\marginbottom}   % make photo exactly match the header with margintop/marginright/marginbottom as margin
+
+\makeheader
+
+\highlightbar{
+
+    \section{Contacto}
+    
+    \email{josheluis96@gmail.com}
+    \phone{+593968297406}{https://api.whatsapp.com/send?phone=593968297406}
+    \location{Conjunto residencial Parque Real, Quito}
+    \github{@josheluis961 - GitLab}{https://gitlab.com/josheluis961}
+    \linkedin{Jose Luis Churo}{https://www.linkedin.com/in/jose-luis-churo-vicente-068a08167/}
+    Fecha Nacimiento 07-Jun-1996
+    
+    \section{Habilidades Profesionales}
+    
+    \skillsection{Lenguajes }
+    \skill{Java}{2019}
+    \skill{Bash}{2018}
+    \skill{C}{2018 FEB-DIC}
+    \skill{PLSQL}{2018}
+    \skill{Html}{2020}
+    \skill{Css}{2020}
+    \skill{TypeScript}{2020}
+    \skill{MongoQuery }{2019}
+    \skill{NodeJS }{2020}
+    \skill{Regex }{2018}
+    \skill{Python}{2018 FEB-JUN}
+    \skill{C#}{2020 MAR-MAY}
+    \skill{Latex}{2020}
+    \skill{Markdown}{2019}
+    
+    \skillsection{Frameworks }
+    \skill{React Native Android e IOS}{2020}
+    \skill{NestJs}{2022}
+    \skill{Spring Boot }{2019}
+    \skill{Spring Batch }{2020 MAY-JUL}
+    \skill{Quarkus }{2020}
+    \skill{Microprofile }{2020}
+    \skill{JPA }{2019}
+    \skill{Criteria }{2019}
+    \skill{Angular }{2019}
+    \skill{PrimeNG }{2019}
+    \skill{Keycloak }{2019}
+    \skill{Swagger }{2019}
+    \skill{Log4j2 }{2019}
+    \skillsection{Base de Datos }
+    \skill{PostgreSQL}{2018}
+    \skill{Oracle SQL}{2018}
+    \skill{DynamoDB}{2023}
+    \skill{Mongo Script}{2019}
+    \skill{Mongo ADMIN}{2020}
+    \skill{Mysql}{2020 JUL-SEP}
+    \skill{Apache Druid }{2019-2020}
+    \skill{Apache Hbase }{2019-2020}
+    \skill{Apache Hive }{2019-2020}
+}
+\mainbar{
+
+    \section[\faGears]{Historial Laboral}
+    \subsection{BANCO PICHINCHA}
+    \job{2022}
+        {Quito Ecuador}
+        {Frontend and Backend Developer}
+        {Desarrollo de Aplicación DEUNA y microservicios}
+        
+                \vspace{0.5em}
+    
+    \subsection{GLOBAL HITSS}
+    \job{2021-2022}
+        {Guayaquil Ecuador}
+        {Ingeniero de Proyectos Senior}
+        {Actualmente lidero proyectos en Arquitecturas de micro-servicios}
+    \job{01/2019 - 03/2021}
+        {Guayaquil Ecuador}
+        {Ingeniero de Proyectos}
+        {Desarrollo de Micro-Servicios}
+    \job{01/2018 - 12/2018}
+        {Guayaquil Ecuador}
+        {Ingeniero de Proyectos DWH}
+        {Desarrollo en Herramientas de BigData}
+               \vspace{0.5em}
+             \subsection{SUDAMERICANA DE SOFTWARE}
+        \job{2017-2018}
+        {Guayaquil Ecuador}
+        {Ingeniero de Proyectos Junior}
+        {Desarrollo de proyectos}
+
+    \section[\faMortarBoard]{Educación Formal}
+    \job{2014 - 2019}
+    {Universidad  de Guayaquil}
+    {Ing. en Sistemas Computacionales}
+    {Ingeniero en Sistemas Computacionales}
+    \section[\faMortarBoard]{Certificaciones}
+    \achievement{\href{https://www.scrumstudy.com/certification/verify?type=SMC&number=867391}{Scrum Master Certified (SMC™)}}
+
+    SCRUMstudy
+
+    Escuela de Proyectos
+
+    \vspace{0.5em}
+
+
+    \section[\faMortarBoard]{Cursos y Capacitaciones}
+
+    \begin{itemize}
+        \item SCRUM  FOUNDATION
+        \item \href{https://www.udemy.com/certificate/UC-72d37b5e-f6b1-4346-b48b-da8062da9fc2/}{React Native CLI: Aplicaciones nativas para IOS y Android}
+        \item \href{https://www.udemy.com/certificate/UC-08e33a74-fe18-4b66-b855-c722fd4b60b5/}{Quarkus desarrollo Ágil de Microservicios, APIs y web Apps}
+        \item \href{https://www.udemy.com/certificate/UC-3ba974b6-9611-43ce-bcd8-a3e0896c454c/}{Spring Framework 6 & Spring Boot 3 desde cero a experto 2024}
+        \item \href{https://www.udemy.com/certificate/UC-494134ba-fddf-4892-ab44-9e7627dd8381/}{Bash - Intérprete de Comandos de Linux. Aprende desde cero}
+        \item \href{https://www.udemy.com/certificate/UC-a3994fa4-c958-449c-9557-a70f97487448/}{Python Practicando. Desde 0 hasta Desarrollador en Python}
+        \item \href{https://www.udemy.com/certificate/UC-a1c57b58-3e16-4268-a4f6-c532e89323d2/}{Nest: Desarrollo backend escalable con Node}
+        \item \href{https://www.udemy.com/certificate/UC-569fd0eb-1c71-449c-ab0f-694ef4d4b93a/}{Curso Php y MySql - Aprende a trabajar con bases de datos}
+        \item \href{https://www.udemy.com/certificate/UC-22c55a40-4bc7-4704-ac0d-83bf64eb1c91/}{Introducción a GraphQL desde las bases hasta crear APIs}
+        \item \href{https://www.udemy.com/certificate/UC-fc478c3c-e4f3-4796-8cb8-c2e9e80228a5/}{Legacy - Node: De cero a experto}
+    \end{itemize}
+
+}
+\makebody
+\clearpage
+
+
+\pagestyle{highlightmain}
+
+% The highlightbar needs to be filled to display mainbar contents correctly in singlesised mode
+% For an empty highlightbar, fill with empty space
+\highlightbar{
+    \section{Habilidades Profesionales}
+    \skillsection{Contenedores }
+    \skill{Docker}{2019}
+    \skill{OpenShift Native Cloud }{2020}
+    \skill{Kubernetes AWS}{2020}
+    \vspace{0.5em}
+    \skillsection{Colas }
+    \skill{RabbitMQ}{2019}
+    \skill{Kafka}{2020}
+    
+    \vspace{0.5em}
+    \skillsection{Herramientas de Versión }
+    \skill{Github }{2020}
+    \skill{Gitlab }{2019}
+    \skill{Git Azure}{2022}
+    \skill{SVN }{2018}
+    
+    \vspace{0.5em}
+    \skillsection{Ecosistemas de BigData }
+    \skill{Apache Hadoop }{2019 - 2020}
+    
+    \vspace{0.5em}
+    \skillsection{Flow of Data }
+    \skill{Apache Nifi}{2019 - 2020}
+    
+    \vspace{0.5em}
+    \skillsection{Visualización de Datos  }
+    \skill{Tablue }{2019-2020}
+    
+    \vspace{0.5em}
+    \skillsection{Gestion de Proyectos  }
+    \skill{Scrum }{2018}
+    
+    \vspace{0.5em}
+    \skillsection{Control de calidad  }
+    \skill{SonarCloud }{2019}
+    
+    \vspace{0.5em}
+    \skillsection{Especificacion de APIS  }
+    \skill{Rest }{2019}
+    \skill{Soap }{2018}
+    \skill{WSDL }{2019}
+    \skill{WADL }{2019}
+    \skill{GraphQL }{2021}
+    \skill{AsyncApi}{2022}
+
+    \vspace{0.5em}
+    \skillsection{Diseño de Arquitecturas  }
+    \skill{Archi }{2019}
+    \skill{Draw.io }{2018}
+    \skill{Visio }{2018}
+    \vspace{0.5em}
+    \skillsection{Herramientas  }
+    \skill{Ecplise }{2018}
+    \skill{PLSQL }{2018}
+    \skill{Ecplise }{2018}
+    \skill{Visual Code }{2019}
+    \skill{Postman }{2018}
+    \skill{SoapUI }{2018}
+    \skill{Intellij IDEA }{2019}
+    \skill{WebStorm IDEA }{2019}
+    \skill{OneNote }{2018}
+    \skill{Proyect }{2018}
+}
+\mainbar{
+
+    \section{HISTORIAL LABORAL}
+
+    \subsection{Deuna - Banco Pichincha}
+    Desarrollo de una billetera digital con React Native (Android e iOS), que integra pagos con QR, transferencias bancarias y validación de identidad mediante reconocimiento facial y huella dactilar. Implementación de microservicios en NestJS desplegados en AWS, integración con el core bancario Frame Banking, gestión de datos en PostgreSQL y DynamoDB, y monitoreo con Dynatrace.
+    \tag{React Native}
+    \tag{Android}
+    \tag{IOS}
+    \tag{Auth0}
+    \tag{Dynatrace}
+    \tag{DynamoDB}
+    \tag{S3}
+    \tag{AWS}
+    \tag{Browserless}
+    \tag{PostgresSQL}
+    \tag{Redis}
+    \tag{AsyncAPI}
+    \tag{Kafka}
+    \tag{Typescript}
+    \tag{K8s}
+    \vspace{0.5em}
+
+        \subsection{Global Hitss - CONECEL}
+    Diseño, implementación y mantenimiento de sistemas y ecosistemas de microservicios orientados a la automatización y optimización de procesos empresariales, incluyendo análisis crediticio, negociación con clientes corporativos, procesamiento de órdenes de venta y gestión de pagos. Experiencia con
+    tecnologías como : \tag{Spring Boot}
+        \tag{Quarkus}
+        \tag{Angular}
+        \tag{RabbitMQ}
+        \tag{Redis}
+        \tag{Microprofile}
+        \tag{Swagger}
+        \tag{Log4j2}
+        \tag{S2I}
+        \tag{Docker}
+        \tag{PLSQL}
+        \tag{Oracle}
+        \tag{JPA}
+        \tag{Spring Batch}
+        \tag{Sonarqube}
+        \tag{Keycloak}
+        \tag{Openshift}
+        \tag{Automation Anyware}
+        \tag{Source to Image}
+        \tag{Mongo}
+        \tag{Soap}
+        \tag{Rest}
+        \tag{Open Api}
+        \tag{Swagger}
+        \tag{Openshift}
+        \tag{Rest}
+        \tag{Open Api}
+        \tag{JAVA EE}
+        \tag{C}
+        \vspace{0.5em}
+        
+        \subsection{BigData - CONECEL}
+        Implementación de procesos ETL y análisis de datos en ecosistema de herramientas Hadoop, con Tablue como herramienta de visualización de datos.
+        \tag{Apache NIFI}
+        \tag{Apache HIVE}
+        \tag{Apache DRUID}
+        \tag{Hadoop}
+        \tag{Tablue}
+        \tag{Oracle}
+        \tag{DataStage}
+        \tag{Shell}
+        \vspace{0.5em}
+
+    \vspace{0.5em}
+    
+
+        
+}
+\makebody
+
+\clearpage
+
+
+\pagestyle{highlightmain}
+
+% The highlightbar needs to be filled to display mainbar contents correctly in singlesised mode
+% For an empty highlightbar, fill with empty space
+\highlightbar{
+    \section{Conocimientos Académicos}
+    \skillsection{Lenguajes}
+    \vspace{0.5em}
+    \skill{PHP}{2018}
+    \skill{R}{2018}
+
+    \vspace{0.5em}
+
+    \skillsection{Frameworks}
+
+    \vspace{0.5em}
+
+    \skill{Xamarin}{2018}
+    \skill{Arduino}{2018}
+    \skill{Jakarta EE}{2018}
+    \skill{TensorFlow}{2018}
+
+    \vspace{0.5em}
+
+    \skillsection{Bases de Datos}
+
+    \vspace{0.5em}
+
+    \skill{H2}{2018}
+    \skill{SQL Serve}{2018}
+
+    \vspace{0.5em}
+
+    \skillsection{Visualización de Datos }
+
+    \vspace{0.5em}
+
+    \skill{PowerBI}{2020}
+    \vspace{0.5em}
+    \skillsection{Servidores  }
+    \skill{TomEE}{2018}
+    \skill{Jakarta EE}{2020}
+    \vspace{0.5em}
+    \skillsection{Herramientas }
+    \skill{Virtual-BOX}{2018}
+    
+    \section{Edición \today }
+    \simpleskill{Hoja de vida Editada y Generada en Látex - Overleaf}
+    \simpleskill{\href{https://es.overleaf.com/read/bqqbvcmxqthk}{Link de fuente} }
+    
+}
+\mainbar{
+
+
+ 
+ \section[\faMortarBoard]{Capacitaciones Corporativas Grupo Carso}
+\begin{itemize}
+\item MICROSOFT EXCEL 2016
+\item CODIGO DE ETICA AMERICA MOVIL
+\item Control efectivo de la corrupción-América Latina
+\item Introducción a la seguridad de la información (2021)
+\end{itemize}
+    \section[\faMortarBoard]{Capacitaciones Corporativas Banco Pichincha}
+    \begin{itemize}
+        \item Administración del Riesgo de Lavado de Activos
+        \item Compliance Banco Pichincha
+        \item Seguridad y Salud Ocupacional
+        \item Educación Financiera
+        \item Continuidad de Negocio
+    \end{itemize}
+
+    \section{Referencias}
+
+    \textbf{Arquitecto de Soluciones - Banco Pichincha}
+
+    Ing. Roberto Cedeño
+
+    +593 95 927 1292
+
+    \textbf{Lider de Proyectos TIC - CONECEL}
+
+    Ing. Ricardo Chalen
+
+    +593 99 948 5406
+
+    \textbf{Ingeniero de Proyectos y Procesos - CONECEL}
+
+    Ing. Rocio Ojeda
+
+    +593 98 570 3259
+
+    \textbf{Analista de Crédito - CONECEL}
+
+    FIN Sílvia Poslígua
+
+    +593 99 100 0222
+
+
+}
+\makebody
+
+\clearpage
+\pagestyle{empty}
+
+
+
+\end{document}
