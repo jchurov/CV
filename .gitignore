@@ -12,6 +12,11 @@
 *.cb2
 .*.lb
 .idea/
+# Ignorar todos los archivos en el directorio out
+out/*
+
+# Exceptuar el archivo resume.pdf
+!out/*.pdf
 ## Intermediate documents:
 *.dvi
 *.xdv
